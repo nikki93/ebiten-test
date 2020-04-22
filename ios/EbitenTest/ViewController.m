@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <Mobile/MobileEbitenViewController.h>
+
 
 @interface ViewController ()
+
+@property (nonatomic, strong) MobileEbitenViewController *ebitenVC;
 
 @end
 
@@ -16,7 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.ebitenVC = [[MobileEbitenViewController alloc] init];
+    [self addChildViewController:self.ebitenVC];
+    self.ebitenVC.view.frame = self.view.frame;
+    [self.view addSubview:self.ebitenVC.view];
+    [self.ebitenVC didMoveToParentViewController:self];
 }
 
 
