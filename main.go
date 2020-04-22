@@ -25,7 +25,7 @@ type rect struct {
 	phase   float64
 }
 
-type game struct {
+type Game struct {
 	loaded bool
 
 	white *ebiten.Image
@@ -36,7 +36,7 @@ type game struct {
 var startTime time.Time
 var lastFrameTime time.Time
 
-func (g *game) Load() {
+func (g *Game) Load() {
 	startTime = time.Now()
 	lastFrameTime = startTime
 
@@ -60,7 +60,7 @@ func (g *game) Load() {
 	g.loaded = true
 }
 
-func (g *game) Update(screen *ebiten.Image) error {
+func (g *Game) Update(screen *ebiten.Image) error {
 	if !g.loaded {
 		g.Load()
 	}
@@ -78,7 +78,7 @@ func (g *game) Update(screen *ebiten.Image) error {
 	return nil
 }
 
-func (g *game) Draw(screen *ebiten.Image) {
+func (g *Game) Draw(screen *ebiten.Image) {
 	op := &ebiten.DrawImageOptions{}
 	for i := 0; i < N; i++ {
 		rect := g.rects[i]
@@ -93,14 +93,14 @@ func (g *game) Draw(screen *ebiten.Image) {
 	ebitenutil.DebugPrint(screen, fmt.Sprintf("fps: %0.2f", ebiten.CurrentFPS()))
 }
 
-func (g *game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
+func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
 	return W, H
 }
 
 func main() {
 	ebiten.SetWindowSize(W, H)
 	ebiten.SetWindowTitle("Hello, World!")
-	if err := ebiten.RunGame(&game{}); err != nil {
+	if err := ebiten.RunGame(&Game{}); err != nil {
 		log.Fatal(err)
 	}
 }
