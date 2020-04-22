@@ -13,7 +13,7 @@ var white *ebiten.Image
 
 func init() {
 	white, _ = ebiten.NewImage(1, 1, ebiten.FilterDefault)
-	white.Fill(color.RGBA{0xff, 0, 0xff, 0xff})
+	white.Fill(color.RGBA{0xff, 0xff, 0xff, 0xff})
 }
 
 func (g *Game) Update(screen *ebiten.Image) error {
