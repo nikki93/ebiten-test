@@ -12,6 +12,9 @@ import (
 	"github.com/hajimehoshi/ebiten/ebitenutil"
 )
 
+const W = 947
+const H = 781
+
 var white *ebiten.Image
 
 const N = 30000
@@ -40,14 +43,14 @@ func (g *game) Load() {
 
 	for i := 0; i < N; i++ {
 		rects[i] = &rect{
-			x:     320 * rand.Float64(),
-			y:     240 * rand.Float64(),
+			x:     W * rand.Float64(),
+			y:     H * rand.Float64(),
 			r:     rand.Float64(),
 			g:     rand.Float64(),
 			b:     rand.Float64(),
-			speed: 0.5 * 240 * rand.Float64(),
-			w:     320 * rand.Float64() / 16.0,
-			h:     320 * rand.Float64() / 16.0,
+			speed: 0.5 * H * rand.Float64(),
+			w:     W * rand.Float64() / 16.0,
+			h:     W * rand.Float64() / 16.0,
 			phase: 2 * math.Pi * rand.Float64(),
 		}
 	}
@@ -83,11 +86,11 @@ func (g *game) Draw(screen *ebiten.Image) {
 }
 
 func (g *game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
-	return 320, 240
+	return W, H
 }
 
 func main() {
-	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowSize(W, H)
 	ebiten.SetWindowTitle("Hello, World!")
 	g := &game{}
 	g.Load()
