@@ -11,8 +11,8 @@ import (
 	"github.com/hajimehoshi/ebiten/ebitenutil"
 )
 
-const W = 947
-const H = 781
+const W = 800
+const H = 450
 
 const N = 1000
 
