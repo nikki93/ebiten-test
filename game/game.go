@@ -14,7 +14,7 @@ import (
 const W = 800
 const H = 450
 
-const N = 1000
+const N = 40000
 
 type rect struct {
 	x, y    float64
@@ -35,7 +35,24 @@ type Game struct {
 var startTime time.Time
 var lastFrameTime time.Time
 
+var fibResult int
+var fibTime float64
+
+func fib(n int) int {
+	if n <= 1 {
+		return 1
+	} else {
+		return fib(n-1) + fib(n-2)
+	}
+}
+
 func (g *Game) Load() {
+	{
+		t1 := time.Now()
+		fibResult = fib(40)
+		fibTime = time.Now().Sub(t1).Seconds()
+	}
+
 	startTime = time.Now()
 	lastFrameTime = startTime
 
@@ -89,7 +106,9 @@ func (g *Game) Draw(screen *ebiten.Image) {
 		screen.DrawImage(g.white, op)
 	}
 
-	ebitenutil.DebugPrint(screen, fmt.Sprintf("fps: %0.2f", ebiten.CurrentFPS()))
+	ebitenutil.DebugPrint(screen,
+		fmt.Sprintf("fps: %0.2f -- %d -- %d -- %f",
+			ebiten.CurrentFPS(), N, fibResult, fibTime))
 }
 
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
