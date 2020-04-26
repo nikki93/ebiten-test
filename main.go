@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/hajimehoshi/ebiten"
 	"log"
+
+	"github.com/hajimehoshi/ebiten"
 
 	"github.com/nikki93/ebiten-test/game"
 )
