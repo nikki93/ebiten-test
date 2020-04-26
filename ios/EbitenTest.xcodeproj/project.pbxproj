@@ -14,7 +14,6 @@
 		A12825C8245028F60084CE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12825C7245028F60084CE52 /* Assets.xcassets */; };
 		A12825CB245028F60084CE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12825C9245028F60084CE52 /* LaunchScreen.storyboard */; };
 		A12825CE245028F60084CE52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12825CD245028F60084CE52 /* main.m */; };
-		A1892F9C2450342B005E8BFB /* Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1892F9B2450342B005E8BFB /* Mobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		A12825CA245028F60084CE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A12825CC245028F60084CE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12825CD245028F60084CE52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A1892F9B2450342B005E8BFB /* Mobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mobile.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1892F9C2450342B005E8BFB /* Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +80,6 @@
 		A13BEDC42450320C007D8BD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1892F9B2450342B005E8BFB /* Mobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
