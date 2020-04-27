@@ -2,7 +2,7 @@ module gobind
 
 go 1.14
 
-replace github.com/nikki93/ebiten-test => /Users/nikki/Development/ebiten-test
+replace github.com/nikki93/ebiten-test => ../
 
 require (
 	github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802
@@ -41,7 +41,7 @@ require (
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f
 )
 
-replace github.com/hajimehoshi/ebiten v1.12.0-alpha.0.20200329183507-9fe4191a6abc => /Users/nikki/Development/ebiten
+replace github.com/hajimehoshi/ebiten v1.12.0-alpha.0.20200329183507-9fe4191a6abc => ../../ebiten
 
 replace github.com/nikki93/gomob => ../../gomob
 
