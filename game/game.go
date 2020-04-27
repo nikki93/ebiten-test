@@ -14,7 +14,7 @@ import (
 const W = 800
 const H = 450
 
-const N = 50000
+const N = 30000
 
 type rect struct {
 	x, y    float64
