@@ -1,4 +1,4 @@
-package mobile
+package main
 
 import (
 	"github.com/hajimehoshi/ebiten/mobile"

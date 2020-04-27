@@ -6,9 +6,9 @@
 #ifndef __Mobile_H__
 #define __Mobile_H__
 
-@import Foundation;
-#include "ref.h"
-#include "Universe.objc.h"
+#import <Foundation/Foundation.h>
+//#include "ref.h"
+//#include "Universe.objc.h"
 
 
 FOUNDATION_EXPORT void MobileDummy(void);

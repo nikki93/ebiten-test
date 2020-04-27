@@ -8,7 +8,7 @@ package main
 /*
 #include <stdlib.h>
 #include <stdint.h>
-#include "seq.h"
+//#include "seq.h"
 #include "mobile.h"
 
 */
@@ -16,11 +16,11 @@ import "C"
 
 import (
 	"github.com/nikki93/ebiten-test/mobile"
-	_seq "golang.org/x/mobile/bind/seq"
+	//_seq "golang.org/x/mobile/bind/seq"
 )
 
 // suppress the error if seq ends up unused
-var _ = _seq.FromRefNum
+//var _ = _seq.FromRefNum
 
 //export proxymobile__Dummy
 func proxymobile__Dummy() {

@@ -14,6 +14,9 @@
 		A12825C8245028F60084CE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12825C7245028F60084CE52 /* Assets.xcassets */; };
 		A12825CB245028F60084CE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12825C9245028F60084CE52 /* LaunchScreen.storyboard */; };
 		A12825CE245028F60084CE52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12825CD245028F60084CE52 /* main.m */; };
+		A1D9FEE0245662DA00AC20B3 /* mobileebitenviewcontroller_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D9FEDD245662D900AC20B3 /* mobileebitenviewcontroller_ios.m */; };
+		A1D9FEE1245662DA00AC20B3 /* Ebitenmobileview_darwin.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D9FEDE245662D900AC20B3 /* Ebitenmobileview_darwin.m */; };
+		A1D9FEE2245662DA00AC20B3 /* Mobile_darwin.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D9FEDF245662D900AC20B3 /* Mobile_darwin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		A12825CA245028F60084CE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A12825CC245028F60084CE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12825CD245028F60084CE52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1D9FEDD245662D900AC20B3 /* mobileebitenviewcontroller_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mobileebitenviewcontroller_ios.m; path = ../../gobind/mobileebitenviewcontroller_ios.m; sourceTree = "<group>"; };
+		A1D9FEDE245662D900AC20B3 /* Ebitenmobileview_darwin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ebitenmobileview_darwin.m; path = ../../gobind/Ebitenmobileview_darwin.m; sourceTree = "<group>"; };
+		A1D9FEDF245662D900AC20B3 /* Mobile_darwin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mobile_darwin.m; path = ../../gobind/Mobile_darwin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 		A12825BA245028F40084CE52 /* EbitenTest */ = {
 			isa = PBXGroup;
 			children = (
+				A1D9FEDE245662D900AC20B3 /* Ebitenmobileview_darwin.m */,
+				A1D9FEDF245662D900AC20B3 /* Mobile_darwin.m */,
+				A1D9FEDD245662D900AC20B3 /* mobileebitenviewcontroller_ios.m */,
 				A12825BB245028F40084CE52 /* AppDelegate.h */,
 				A12825BC245028F40084CE52 /* AppDelegate.m */,
 				A12825BE245028F40084CE52 /* SceneDelegate.h */,
@@ -156,7 +165,10 @@
 			files = (
 				A12825C3245028F40084CE52 /* ViewController.m in Sources */,
 				A12825BD245028F40084CE52 /* AppDelegate.m in Sources */,
+				A1D9FEE1245662DA00AC20B3 /* Ebitenmobileview_darwin.m in Sources */,
+				A1D9FEE0245662DA00AC20B3 /* mobileebitenviewcontroller_ios.m in Sources */,
 				A12825CE245028F60084CE52 /* main.m in Sources */,
+				A1D9FEE2245662DA00AC20B3 /* Mobile_darwin.m in Sources */,
 				A12825C0245028F40084CE52 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

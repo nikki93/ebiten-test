@@ -6,9 +6,9 @@
 #ifndef __Ebitenmobileview_H__
 #define __Ebitenmobileview_H__
 
-@import Foundation;
-#include "ref.h"
-#include "Universe.objc.h"
+#import <Foundation/Foundation.h>
+//#include "ref.h"
+//#include "Universe.objc.h"
 
 
 FOUNDATION_EXPORT void EbitenmobileviewLayout(double viewWidth, double viewHeight);

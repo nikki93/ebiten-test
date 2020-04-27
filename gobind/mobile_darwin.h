@@ -7,5 +7,5 @@
 #define __GO_mobile_H__
 
 #include <stdint.h>
-#include <objc/objc.h>
+//#include <objc/objc.h>
 #endif
